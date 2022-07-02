@@ -61,12 +61,16 @@ function getPokemon(request, id){
     request.send()
 }
 
-for (let i = 0; i < 200; i++  ){
+for (let i = 0; i < 6; i++  ){
     let request = new XMLHttpRequest()
     getPokemon(request, i)
 }
 
-
+function new_pokemon(){
+    poke_id = document.getElementById('id').value
+    let request = new XMLHttpRequest()
+    getPokemon(request, poke_id)
+}
 /*request.open('GET', 'https://pokeapi.co/api/v2/pokemon/1', true)
 request.onload = function() {
     var data = JSON.parse(this.response)

@@ -29,6 +29,11 @@ img{
     text-align: center; 
 }
 
+.search_bar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .grass{
     background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
     background-color: #9bcc50;

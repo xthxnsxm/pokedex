@@ -10,6 +10,18 @@
   <body>
     <div class="title"><h1>Pokedex</h1></div>
 
+    <div class="search_bar">
+      <input
+        type="number"
+        id="id"
+        name="id"
+        placeholder="poke id"
+        min="0"
+        max="905"
+      />
+      <button onclick="new_pokemon()">Add to the Pokedex</button>
+    </div>
+
     <div id="pokedex">
       <div class="entry">
         <h3 style="text-align: left">bulbasaur</h3>
@@ -18,7 +30,6 @@
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
           />
           <div class="stats">
-            <span>yes this abilty</span>
             <span>HP: 0</span>
             <span>ATK: 0</span>
             <span>SPATK: 0</span>
